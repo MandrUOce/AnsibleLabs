@@ -7,5 +7,4 @@
 
     - name: Print text
       debug:
-        msg: "I would like to print some text"
         msg: "{{text}}"
