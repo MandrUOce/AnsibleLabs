@@ -2,3 +2,7 @@
   hosts: localhost
   connection: local
   tasks:
+  
+      - name: Print text
+      debug:
+        msg: "I would like to print some text"
