@@ -20,3 +20,4 @@
     get_url: url=https://services.gradle.org/distributions/gradle-8.0-milestone-2-docs.zip dest=/tmp/Budrikaite
   - name: Unarchive a file that is already on the remote machine
     ansible.builtin.unarchive: src=/tmp/Budrikaite/gradle-8.0-milestone-2-docs.zip dest=/tmp/Budrikaite/gradle remote_src=yes
+    when: extracted_hosts == "backEndServers"
