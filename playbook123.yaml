@@ -1,9 +1,9 @@
 ---
 
 - name: Echo
-  hosts: all
+  hosts: 44.202.132.152
   tasks:
 
     - name: Print text
       debug:
-        msg: "playbook123 printing a message"
+        msg: "playbook123 printing a message ony in frontEndServer"
