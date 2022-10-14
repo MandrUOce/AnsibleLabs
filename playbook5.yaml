@@ -2,6 +2,8 @@
 
 - name: Echo
   hosts: "{{host}}"
+  vars:
+    extracted_hosts: "{{host}}"
   tasks:
   - name: ansible create directory example
     file:
@@ -11,6 +13,7 @@
     file:
       path: /tmp/Budrikaite/gradle
       state: directory
+    when: extracted_hosts == "backEndServers"
   - name: download sources
     get_url: url=https://repo1.maven.org/maven2/dnsjava/dnsjava/3.5.0/dnsjava-3.5.0.jar dest=/tmp/Budrikaite/java_dns
   - name: download gradle
