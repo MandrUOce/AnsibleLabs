@@ -7,4 +7,4 @@
 
     - name: Print text
       debug:
-        msg: "{{text}}"
+        msg: "playbook123 printing a message"
