@@ -1,7 +1,7 @@
 ---
 
 - name: Echo
-  hosts: all
+  hosts: "{{CHOOSE_HOST}}"
   tasks:
 
     - name: Print text
