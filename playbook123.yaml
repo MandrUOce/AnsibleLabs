@@ -1,9 +1,9 @@
 ---
 
 - name: Echo
-  hosts: ${{CHOOSE_HOST}}
+  hosts: {{CHOOSE_HOST}}
   tasks:
 
     - name: Print text
       debug:
-        msg: "playbook123 printing a message in ${{CHOOSE_HOST}}"
+        msg: "playbook123 printing a message in {{CHOOSE_HOST}}"
