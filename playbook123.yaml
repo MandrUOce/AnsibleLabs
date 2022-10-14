@@ -6,4 +6,4 @@
 
     - name: Print text
       debug:
-        msg: "playbook123 printing a message in "
+        msg: "playbook123 printing a message in "{{host}}" "
