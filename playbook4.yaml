@@ -1,1 +1,9 @@
+---
 
+- name: Echo
+  hosts: "{{host}}"
+  tasks:
+
+    - name: Print text
+      debug:
+        msg: "playbook123 printing a message in {{host}} "
